@@ -1,1 +1,4 @@
 *.csv
+climate.py
+machine_learn.py
+temperature_prediction.png
