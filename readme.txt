@@ -1,0 +1,1 @@
+herbal_show是对deeplab3+分割后的中草药进行数据预处理
