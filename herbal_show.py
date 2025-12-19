@@ -21,8 +21,8 @@ def create_comparison_data(width=600, height=400):
 
     # --- 关键场景：两个紧挨着的孔洞 ---
     # 孔洞 A
-    # h1_center = (250, 200)
-    # cv2.circle(img, h1_center, 30, (20, 20, 20), -1)
+    h1_center = (250, 200)
+    cv2.circle(img, h1_center, 30, (20, 20, 20), -1)
 
     # 孔洞 B (圆心距离很近，边缘会相交/粘连)
     h2_center = (300, 200)
