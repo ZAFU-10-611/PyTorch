@@ -33,8 +33,8 @@ def enhance_object_with_black_bg(img, mask):
     3. 将背景置为纯黑 (0,0,0)
     """
     # 1. 确保 Mask 尺寸与原图一致
-    if img.shape[:2] != mask.shape[:2]:
-        mask = cv2.resize(mask, (img.shape[1], img.shape[0]), interpolation=cv2.INTER_NEAREST)
+    # if img.shape[:2] != mask.shape[:2]:
+    #     mask = cv2.resize(mask, (img.shape[1], img.shape[0]), interpolation=cv2.INTER_NEAREST)
 
     # 2. 二值化 Mask (确保只有 0 和 255)
     _, binary_mask = cv2.threshold(mask, 127, 255, cv2.THRESH_BINARY)
